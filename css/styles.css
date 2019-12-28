@@ -1,11 +1,124 @@
-@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root{
+    --primary-color-1: hsl(179, 62%, 43%);
+    --primary-color-2: hsl(71, 73%, 54%);
+    --neutral-color-1: hsl(204, 43%, 93%);
+    --neutral-color-2: hsl(218, 22%, 67%);
 }
 
-html,body{
-    font-family: 'Karla', sans-serif;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
+
+html,
+body {
+    font-family: "Karla", sans-serif;
+    color: #333;
+}
+
+ul{
+    list-style: none;
+}
+
+.box{
+    padding: 1rem 1.5rem;
+}
+
+.box-1{
+    color: var(--neutral-color-2);
+    background: #fff;
+    padding: 0 1.5rem;
+}
+
+.box-1 h1{
+    color: var(--primary-color-1);
+    margin: 2rem 0;
+}
+
+.box-1 h2{
+    color: var(--primary-color-2);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.box-1 p{
+    line-height: 1.7;
+    margin-bottom: 2rem; 
+}
+
+.box-2{
+    background: var(--primary-color-1);
+    color: var(--neutral-color-1);
+}
+
+.box-2 h2{
+    margin: 2rem 0;
+}
+
+.box-2 h3{
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.box-2  .month{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.box-2 p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    background: var(--primary-color-2);
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    border-radius: 7px;
+    box-shadow: 0 7px 20px rgba(0,0,0, .3)
+}
+
+.box-3{
+    background: var(--primary-color-1);
+    color: var(--neutral-color-1);
+    opacity: .85;
+}
+
+.box-3 h2{
+    margin: 2rem 0;
+    opacity: 1;
+}
+
+.box-3 li {
+    line-height: 2;
+    opacity: 0.8;
+}
+.box-3 li:last-child{
+    margin-bottom: 2rem;
+}
+
+.attribution {
+	font-size: 1rem;;
+    text-align: center;
+    padding: 3rem;
+}
+
+.attribution a {
+	color: var(--primary-color-2);
+}
+
+
